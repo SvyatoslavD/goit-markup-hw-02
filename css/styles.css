@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 :root {
   --color-accent: #2196f3;
 
@@ -27,25 +31,44 @@
   --background-color-main: #ffffff;
   --background-color-secondary: #2f303a;
   --background-color-team: #f5f4fa;
+  --background-color-button-inactive: #f5f4fa;
+
+  --text-font-main: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
-  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
   color: var(--text-color-main);
   background-color: var(--background-color-main);
+
+  font-family: var(--text-font-main);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* header */
-.logo-accent {
-  color: var(--color-accent);
-}
-
 .site-nav .link {
   color: var(--text-color-secondary);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 
 .header-contacts .link {
   color: var(--text-color-main);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 
 .site-nav .link.current,
@@ -57,6 +80,19 @@ body {
   cursor: pointer;
 }
 
+.link.logo {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-accent {
+  color: var(--color-accent);
+}
+
 /* index.html | main */
 .hero-section {
   background: var(--background-color-secondary);
@@ -64,25 +100,44 @@ body {
 
 .hero-title {
   color: var(--text-color-white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button {
   color: var(--text-color-secondary);
   background-color: var(--background-color-main);
+  border: none;
 }
 
 .button.primary {
   color: var(--text-color-white);
   background-color: var(--color-accent);
-  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .section-title {
   color: var(--text-color-secondary);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
 .features-list .title {
   color: var(--text-color-secondary);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .section.team {
@@ -95,6 +150,15 @@ body {
 
 .team-list .name {
   color: var(--text-color-secondary);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list .position {
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* footer */
@@ -104,6 +168,8 @@ body {
 
 .footer .link {
   color: var(--text-color-white);
+
+  text-decoration: none;
 }
 
 .footer .link:hover,
@@ -114,11 +180,59 @@ body {
 
 .address .location {
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .link.contacts {
-  font-style: normal;
   color: var(--text-color-footer-contacts);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* portfolio.html */
+.button.inactive {
+  color: var(--text-color-secondary);
+  background-color: var(--background-color-button-inactive);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button.active,
+.button.inactive:hover,
+.button.inactive:focus {
+  cursor: pointer;
+
+  color: var(--text-color-white);
+  background-color: var(--color-accent);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.products-list .link {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.products-list .name {
+  color: var(--text-color-secondary);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.products-list .category {
+  font-size: 18px;
+  line-height: 1.88;
+}
