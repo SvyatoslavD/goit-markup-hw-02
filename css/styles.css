@@ -16,10 +16,6 @@
   list-style: none;
 }
 
-button {
-  font-family: inherit;
-}
-
 :root {
   --color-accent: #2196f3;
 
@@ -77,7 +73,6 @@ body {
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--color-accent);
-  cursor: pointer;
 }
 
 .link.logo {
@@ -109,8 +104,13 @@ body {
 }
 
 .button {
+  cursor: pointer;
+
   color: var(--text-color-secondary);
   background-color: var(--background-color-main);
+
+  font-family: inherit;
+
   border: none;
 }
 
@@ -206,8 +206,6 @@ body {
 .button.active,
 .button.inactive:hover,
 .button.inactive:focus {
-  cursor: pointer;
-
   color: var(--text-color-white);
   background-color: var(--color-accent);
 
