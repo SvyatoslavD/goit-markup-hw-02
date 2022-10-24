@@ -9,61 +9,64 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a class="link logo" href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+      <nav class="site-nav">
+        <a class="link" ref="./index.html">
+          <span class="logo-accent">Web</span>Studio
+        </a>
+        <ul class="list">
+          <li><a class="link current" href="./index.html">Studio</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list header-contacts">
         <li>
-          <a class="link contacts-mailto" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+          <a class="link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
         </li>
         <li>
-          <a class="link contacts-tel" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
+
     <main>
       <!-- EFFECTIVE SOLUTIONS FOR YOUR BUSINESS -->
       <section class="hero-section">
         <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button class="hero-button" type="button">Request our service</button>
+        <button class="button primary" type="button">
+          Request our service
+        </button>
       </section>
 
       <!-- Our advantages -->
-      <section>
+      <section class="section">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul>
+        <ul class="list features-list">
           <li>
-            <h3>ATTENTION TO DETAILS</h3>
+            <h3 class="title">ATTENTION TO DETAILS</h3>
             <p>
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
           <li>
-            <h3>PUNCTUALITY</h3>
+            <h3 class="title">PUNCTUALITY</h3>
             <p>
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and respect the agreed deadlines.
             </p>
           </li>
           <li>
-            <h3>PLANNING</h3>
+            <h3 class="title">PLANNING</h3>
             <p>
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
           <li>
-            <h3>MODERN TECHNOLOGIES</h3>
+            <h3 class="title">MODERN TECHNOLOGIES</h3>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
@@ -73,9 +76,9 @@
       </section>
 
       <!-- What we do -->
-      <section>
-        <h2>What we do</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">What we do</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/img.jpg"
@@ -104,59 +107,61 @@
       </section>
 
       <!-- Our Team -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
+      <section class="section team">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="list team-list">
+          <li class="team-member">
             <img
               src="./images/img_1.jpg"
               alt="employee-1"
               width="270"
               height="260"
             />
-            <h3>Christopher Walker</h3>
+            <h3 class="name">Christopher Walker</h3>
             <p>Product Designer</p>
           </li>
-          <li>
+          <li class="team-member">
             <img
               src="./images/img_2.jpg"
               alt="employee-2"
               width="270"
               height="260"
             />
-            <h3>Kylie Evans</h3>
+            <h3 class="name">Kylie Evans</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-member">
             <img
               src="./images/img_3.jpg"
               alt="employee-3"
               width="270"
               height="260"
             />
-            <h3>Ryan Harris</h3>
+            <h3 class="name">Ryan Harris</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="team-member">
             <img
               src="./images/img_4.jpg"
               alt="employee-4"
               width="270"
               height="260"
             />
-            <h3>Tyler Moore</h3>
+            <h3 class="name">Tyler Moore</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a class="link logo" href="./index.html">WebStudio</a>
+      <a class="link" ref="./index.html">
+        <span class="logo-accent">Web</span>Studio
+      </a>
       <address class="address">
-        <ul>
+        <ul class="list">
           <li>
             <a
-              class="link address-geo"
+              class="link location"
               href="https://goo.gl/maps/iqiwWgoC33g4sDih7"
               target="_blank"
               rel="noopener noreferrer"
@@ -164,14 +169,12 @@
             </a>
           </li>
           <li>
-            <a class="link address-mailto" href="mailto:info@example.com"
+            <a class="link contacts" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
           <li>
-            <a class="link address-tel" href="tel:+12127724150"
-              >+1 212-772-4150</a
-            >
+            <a class="link contacts" href="tel:+12127724150">+1 212-772-4150</a>
           </li>
         </ul>
       </address>
