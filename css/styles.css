@@ -178,14 +178,18 @@ body {
   cursor: pointer;
 }
 
-.address {
+.address .location {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.address .contacts {
+.link.contacts {
   color: var(--text-color-footer-contacts);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* portfolio.html */
